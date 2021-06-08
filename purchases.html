@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body { 
            /* margin: 0;  */
@@ -60,19 +61,69 @@ div.content {
     text-align: center;
     float: none;
   }
+  .nav{
+    margin-left: 150px;
+  }
+
+        
+        
 }
+form.searchbar input[type=text] {
+          padding: 10px;
+          font-size: 17px;
+          border: 1px solid grey;
+          float: left;
+          width: 70%;
+          background: #f1f1f1;
+          margin-left: 160px;
+        }
+        
+        form.searchbar button {
+          float: left;
+          width: 10%;
+          padding: 10px;
+          background: #2196F3;
+          color: white;
+          font-size: 17px;
+          border: 1px solid grey;
+          border-left: none;
+          cursor: pointer;
+        }
+        
+        form.searchbar button:hover {
+          background: #0b7dda;
+        }
+        
+        form.searchbar::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
     </style>        
     <title>Purchases</title>
 </head>
 <body>
-    <header class="nav"></header>
+     <header>
+      <div class="row">
+        <div class="col-9">
+            <form class="searchbar" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+        <div class="col-10"></div>
+        <div class="col-11"></div>
+        <div class="col-12"></div>
+    </div>
+    </header>
     <div class="sidebar">
         <a class="active" href="#purchase">Purchases</a><br><br>
-        <a href="#sales">Sales</a><br><br>
+        <a href="sales.html">Sales</a><br><br>
         <a href="#report">Reports</a><br><br>
         <a href="#gas-free">Gas free</a><br><br>
         <a href="#transaction">Transaction</a>
     </div>
+    <br>
     <div class="container">
         <div class="form-wrapper">
             <form action="">
@@ -81,10 +132,43 @@ div.content {
                         <h3>Purchases</h3>
                     </div>
                     <div class="col">
-                        <button class="btn btn-primary" >Add new product</button>
-                    </div>
-                     
+                        <button class="btn btn-primary" style="margin-left: 300px;">Add new product</button>
+                    </div>                    
                 </div>
+                <div></div>
+            </form>
+            <form action="" class="form-control">
+              <div class="form-wrapper">
+                <label for="pname">Product name</label><br>
+                <select name="Product name" id="pname">
+                  <option value="kryptonite">kryptonite</option>
+                  <option value="etherium">Etherium</option>
+                  <option value="dodge coin">Dodge Coin</option>
+                </select><br>
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <label for="pprice">Product price</label><br>
+                    <input type="number" name="product price" id="pprice">
+                  </div>
+                  <div class="col">
+                    <label for="pquantity">Product Quantity</label><br> 
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <label for="pdate">Purchase Date</label><br>
+                  <input type="date" name="purchase date" id="pdate">
+                </div>
+                <br>
+                <div>
+                  <label for="pnote">Note</label><br>
+                  <textarea name="text" id="pnote" cols="30" rows="5"></textarea>
+                </div>
+              </div>
             </form>
         </div>
     </div>
