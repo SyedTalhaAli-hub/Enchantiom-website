@@ -9,8 +9,27 @@
          .container{
             min-height: 100vh;
         }
+        body{
+            background-color: #010924;
+            border: none     !important;
+            font: white !important;
+        }
+        form{
+            background-color: #010924 !important;
+        }
+        .form-control{
+            width: 100%;
+        }
+        .form-wrapper{
+            width: 40%;
+        }
         p{
             padding-left: 300px;
+        }
+        .small{
+            line-height: 1px;
+            font-size: 14px;
+            color: white;
         }
     </style>
     <title>Signup</title>
@@ -18,28 +37,25 @@
 <body>
     <header class="nav"></header>
     <div class="container d-flex justify-content-center ">
-        <div>
+        <div class="form-wrapper">
             <p>Do you have account?<a href="login.html">Sign in</a></p>
             
             <h2>Create Account</h2>
-            <h10>Follow the instruction to make it easier to register and you will be <br> 
-            able to explore inside</h10>
+            <span class="small">Follow the instruction to make it easier to register and you will be <br> 
+            able to explore inside<span>
 
-            <form action="" class="form-control">
-                    <label for="username">Username</label>                
+            <form action="" class="form-control">                
                 <div>
-                    <input type="text" name="username" id="username">
-                </div><br>
-                <label for="email">Email</label>
-                <div>
-                    <input type="email" name="email" id="email">
-                </div><br>
-                <label for="password">Password</label>
-                <div>
-                    <input type="text" name="password" id="password">
+                    <input type="text" class="form-control p-2" name="username" id="username" placeholder="Username">
                 </div><br>
                 <div>
-                    <input type="submit" value="Create Account" class="btn1" style="width: 182px;">
+                    <input type="email" class="form-control p-2" name="email" id="email" placeholder="Email">
+                </div><br>
+                <div>
+                    <input type="text" class="form-control p-2" name="password" id="password" placeholder="Password">
+                </div><br>
+                <div>
+                    <input type="submit"  value="Create Account" class="btn1" style="width: 182px;">
                 </div><br>
                 <div>
                     <input type="submit" value="Google" class="btn2 col" style="width: 88px;">

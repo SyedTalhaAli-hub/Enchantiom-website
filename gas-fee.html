@@ -105,14 +105,13 @@ div.content {
       margin-right: 175px !important;
   }
 </style>
-        
-    <title>Sales</title>
+    <title>Gas Fee</title>
 </head>
 <body>
     <header>
         <div class="row">
             <div class="col-9">
-                <form class="searchbar" action="/action_page.php">
+                <form class="searchbar" action="">
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                   </form>
@@ -125,68 +124,58 @@ div.content {
     </header>
     <div class="sidebar">
         <a href="purchases.html">Purchases</a><br><br>
-        <a class="active" href="sales.html">Sales</a><br><br>
+        <a  href="sales.html">Sales</a><br><br>
         <a href="report.html">Reports</a><br><br>
-        <a href="gas-free.html">Gas free</a><br><br>
+        <a class="active" href="gas-free.html">Gas free</a><br><br>
         <a href="transaction.html">Transaction</a>
 
-    </div>
-    <br>
-    
-    <div class="container" >
-        <div class="form-wrapper " >
-            <form action="" >
-                <div class="row">
-                    <div class="col">
-                        <h3 >Sales</h3>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-primary" style="margin-left: 300px;">+New</button>
-                    </div>
-                </div>
-            </form>
+    </div><br>
 
-            <form action="" class="form-control ">
-                <div class="form-wrapper">
-                    <label for="pname">Product name</label><br>
-                    <select name="Product name" id="pname">
-                        <option value="kryptonite">kryptonite</option>
-                        <option value="etherium">Etherium</option>
-                        <option value="dodge coin">Dodge Coin</option>
-                    </select><br>
-                    <br>
-                </div>
+    <div class="container">
+        <form action="" class="form-control">
+            <div class="form-wrapper">
+                <h3>Gas Fee</h3>
+            </div>
+        </form>
+        <form action="" class="form-control">
+            <div    class="form-wrapper">
                 <div class="row">
                     <div class="col">
-                        <label for="sprice">Sales Price</label><br>
-                        <input type="number" name="sale price" id="sprice">
+                        <h4>Over all Gas Fee</h4>
                     </div>
                     <div class="col">
-                        <label for="percentage">Percentage</label>
-                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
-                            </div>
+                        <p><strong>0.002323</strong></p>
+                        <!-- <p>value to be added here from backend</p> -->
+                    </div>
+                </div><hr>
+                <div class="row">
+                    <div class="col">
+                        <h4>Average Daily Gas Fee</h4>
+                    </div>
+                    <div class="col">
+                        <p><strong>0.008786</strong></p>
+                        <!-- <p>value to be added here from backend</p> -->
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col">
+                        <h5>Add New Gas Fee</h5>
+                        <br>
+                        <input type="text" name="product name" id="pname">
+                        <br><br>
+                        <input type="date" name="adding-date" id="date" style="padding-left: 37px;">
+                        <br><br>
+                        <input type="number" name="gas fee" id="fee">
+                        <br><br>
+                        <input type="submit" value="Add">
+                    </div>
+                    <div class="col">
+                        <img src="gas fee graph.PNG" alt="">
+                    </div>
+                </div>
+            </div>
 
-                    </div>
-                </div>
-                <br>
-                <div>
-                    <label for="sold-quantity">Sold Quantity</label><br>
-                    <input type="number" id="sold-quantity" value="0">
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-1">
-                        <button class="btn btn-primary">Delete</button>
-                    </div>
-                    <div class="col-2">
-                        <button class="btn btn-primary">Save</button>
-                    </div>
-                    
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
 </body>
 </html>
