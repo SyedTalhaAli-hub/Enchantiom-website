@@ -22,24 +22,24 @@
           border: 1px solid grey;
           float: left;
           width: 70%;
-          background: #6a6a75;
+          background:#666773;
           margin-left: 160px;
-          border: none;
         }
         
         form.searchbar button {
           float: left;
-          border: none;
           width: 5%;
           padding: 5px;
-          background: #6a6a75;
+          background: #666773;
           color: white;
           font-size: 17px;
+          border: 1px solid grey;
+          border-left: none;
           cursor: pointer;
         }
         
         form.searchbar button:hover {
-          background: #0f142b;
+          background: #0b7dda;
         }
         
         form.searchbar::after {
@@ -56,7 +56,7 @@
           margin: 0;
           padding: 0;
           width: 150px;
-          background-color: #0f142b;
+          background-color: #10152c;
           position: fixed;
           height: 100%;
           overflow: auto;
@@ -104,27 +104,10 @@ div.content {
 .container{
       margin-left: 175px !important;
       margin-right: 175px !important;
-  }
-  .form-control{
-    background-color: #060d24;
-    color: white;
-    border: none;
-  }
-  .p-1{
-    color: #00f5b0;
-  }
-  .get{
-    opacity: 0.4;
-  }
-  .btn-1{
-    width: 20%;
-    background-color:#00f5b0 ;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-  }
+      
+}
 </style>
-    <title>Gas Fee</title>
+    <title>suggestions</title>
 </head>
 <body>
     <header>
@@ -145,62 +128,32 @@ div.content {
         <a href="purchases.html">Purchases</a><br>
         <a  href="sales.html">Sales</a><br>
         <a href="report.html">Reports</a><br>
-        <a class="active" href="gas-free.html">Gas free</a><br>
-        <a href="transaction.html">Transaction</a>
-        <a href="suggestions.html">Suggestions</a><br>
-      <a href="add-suggestion.html">Add Suggestions</a><br>
-      <a href="admin.html">Admin</a><br>
-      <a href="email">Email</a>
-
-    </div><br>
-
+        <a href="gas-free.html">Gas free</a><br>
+        <a href="transaction.html">Transaction</a><br>
+        <a class="active" href="suggestions.html">Suggestions</a><br>
+        <a href="add-suggestion.html">Add Suggestions</a><br>
+        <a href="admin.html">Admin</a><br>
+        <a href="email">Email</a>
+    </div>
     <div class="container">
         <form action="" class="form-control">
             <div class="form-wrapper">
-                <h3>Gas Fee</h3>
-            </div>
-        </form>
-        <form action="" class="form-control">
-            <div    class="form-wrapper">
+                <h5>All Suggestions()</h5>
                 <div class="row">
-                    <div class="col">
-                        <h4>Over all Gas Fee</h4>
-                    </div>
-                    <div class="col p-1">
-                        <p><strong>0.002323</strong></p>
-                        <!-- <p>value to be added here from backend</p> -->
-                    </div>
-                </div><hr>
-                <div class="row">
-                    <div class="col">
-                        <h4>Average Daily Gas Fee</h4>
-                    </div>
-                    <div class="col p-1">
-                        <p><strong>0.008786</strong></p>
-                        <!-- <p>value to be added here from backend</p> -->
-                    </div>
-                </div><br>
-                <div class="row">
-                    <div class="col">
-                        <h5>Add New Gas Fee</h5>
-                        <br>
-                        <input class="get" type="text" name="product name" id="pname">
-                        <br><br>
-                        <input class="get" type="date" name="adding-date" id="date" style="padding-left: 37px;">
-                        <br><br>
-                        <input class="get" type="number" name="gas fee" id="fee">
-                        <br><br>
-                        <form  action="add gass fee">
-                          <input class="btn-1" type="submit" value="Add">
-                        </form>
-                    </div>
-                    <div class="col">
-                        <img src="gas fee graph.PNG" alt="">
+                    <div class="col"></div>
+                    <div class="col-11">
+                        <div class="row"><p><strong>Karjo situbondo</strong></p></div>
+                        <div class="row"><p>SeaWire web is a wireframe kit tht has more then 15 popular categories and more than 200 screens from each category, SeaWire web deserves to be your partner in working on projects</p></div>
+                        <div class="row">
+                            <div class="col"><p>likes</p></div>
+                            <div class="col"><p>likes count</p></div>
+                            <div class="col"><p>dummy Time</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </form>
-    </div>
+    </div>    
 </body>
+
 </html>
