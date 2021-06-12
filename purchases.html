@@ -10,6 +10,7 @@
         body { 
            /* margin: 0;  */
            font-family: "Lato", sans-serif;
+           background-color: #101119;
          } 
         .container{
             margin-left: 150px;
@@ -18,14 +19,14 @@
           margin: 0;
           padding: 0;
           width: 150px;
-          background-color: #f1f1f1;
+          background-color:#0f142b;
           position: fixed;
           height: 100%;
           overflow: auto;
         }
         .sidebar a {
   display: block;
-  color: black;
+  color: white;
   padding: 16px;
   text-decoration: none;
 }
@@ -69,20 +70,20 @@ div.content {
         
 }
 form.searchbar input[type=text] {
-          padding: 10px;
+          padding: 5px;
           font-size: 17px;
           border: 1px solid grey;
           float: left;
           width: 70%;
-          background: #f1f1f1;
+          background: #6c6b76;
           margin-left: 160px;
         }
         
         form.searchbar button {
           float: left;
-          width: 10%;
-          padding: 10px;
-          background: #2196F3;
+          width: 5%;
+          padding: 5px;
+          background:#6c6b76;
           color: white;
           font-size: 17px;
           border: 1px solid grey;
@@ -99,6 +100,22 @@ form.searchbar input[type=text] {
           clear: both;
           display: table;
         }
+        .btn-2{
+          background-color: #00f5b0;
+          border: none;
+        }
+        
+        .form-control{
+          background-color: #0a0f22;
+          border: none;
+        }
+        .form-wrapper{
+          color: white;
+        }
+        .get{
+          opacity: 0.5;
+          
+        }
     </style>        
     <title>Purchases</title>
 </head>
@@ -111,9 +128,9 @@ form.searchbar input[type=text] {
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
         </div>
-        <div class="col-10"></div>
-        <div class="col-11"></div>
-        <div class="col-12"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
     </div>
     </header>
     <div class="sidebar">
@@ -126,13 +143,16 @@ form.searchbar input[type=text] {
     <br>
     <div class="container">
         <div class="form-wrapper">
-            <form action="">
+            <form action="" class="form-control">
                 <div class="row">
                     <div class="col">
-                        <h3>Purchases</h3>
+                        <h3 style="color: white;">Purchases</h3>
                     </div>
-                    <div class="col">
-                        <a href="add-product.html" <button class="btn btn-primary" style="margin-left: 300px;">Add new product</button> </a>
+                    <div class="col-2">
+                      <form  action="add-product.html">
+                        <input class="btn-2" type="submit" value="Add New Product">
+                      </form>
+                    
                     </div>                    
                 </div>
                 <div></div>
@@ -140,7 +160,7 @@ form.searchbar input[type=text] {
             <form action="" class="form-control">
               <div class="form-wrapper">
                 <label for="pname">Product name</label><br>
-                <select name="Product name" id="pname">
+                <select class="get" name="Product name" id="pname">
                   <option value="kryptonite">kryptonite</option>
                   <option value="etherium">Etherium</option>
                   <option value="dodge coin">Dodge Coin</option>
@@ -149,24 +169,24 @@ form.searchbar input[type=text] {
                 <div class="row">
                   <div class="col">
                     <label for="pprice">Product price</label><br>
-                    <input type="number" name="product price" id="pprice">
+                    <input class="get" type="number" name="product price" id="pprice">
                   </div>
                   <div class="col">
                     <label for="pquantity">Product Quantity</label><br> 
                     <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
-                        <input type="number" id="number" value="0" />
+                        <input class="get" type="number" id="number" value="0" />
                         <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"></div>
                   </div>
                 </div>
                 <br>
                 <div>
                   <label for="pdate">Purchase Date</label><br>
-                  <input type="date" name="purchase date" id="pdate">
+                  <input class="get" type="date" name="purchase date" id="pdate">
                 </div>
                 <br>
                 <div>
                   <label for="pnote">Note</label><br>
-                  <textarea name="text" id="pnote" cols="30" rows="5"></textarea>
+                  <textarea class="get" name="text" id="pnote" cols="30" rows="5"></textarea>
                 </div>
               </div>
             </form>

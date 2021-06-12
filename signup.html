@@ -19,17 +19,47 @@
         }
         .form-control{
             width: 100%;
+            border: none;
         }
         .form-wrapper{
             width: 40%;
         }
         p{
-            padding-left: 300px;
+            padding-left: 230px;
+            color: white;
         }
         .small{
-            line-height: 1px;
+            line-height: 17px;
             font-size: 14px;
             color: white;
+            padding-left: 10px;
+            opacity: 0.5;
+        }
+        .main-heading{
+            color: white;
+            padding-left: 10px;
+        }
+        .btn1{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #00f5b0 !important;
+            border: none;
+        }
+        .btn2{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+        }
+        .btn3{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+        }
+        .p-2{
+            opacity: 0.3;
         }
     </style>
     <title>Signup</title>
@@ -40,10 +70,9 @@
         <div class="form-wrapper">
             <p>Do you have account?<a href="login.html">Sign in</a></p>
             
-            <h2>Create Account</h2>
-            <span class="small">Follow the instruction to make it easier to register and you will be <br> 
-            able to explore inside<span>
-
+            <h2 class="main-heading">Create Account</h2>
+            <div class="small">Follow the instruction to make it easier to register and you will be<br> 
+                able to explore inside</div><br>
             <form action="" class="form-control">                
                 <div>
                     <input type="text" class="form-control p-2" name="username" id="username" placeholder="Username">
@@ -55,11 +84,15 @@
                     <input type="text" class="form-control p-2" name="password" id="password" placeholder="Password">
                 </div><br>
                 <div>
-                    <input type="submit"  value="Create Account" class="btn1" style="width: 182px;">
+                    <input type="submit"  value="Create Account" class="btn1">
                 </div><br>
-                <div>
-                    <input type="submit" value="Google" class="btn2 col" style="width: 88px;">
-                    <input type="submit" value="Facebook" class="btn3 col" style="width: 88px;"> 
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" value="Google" class="btn2" >
+                    </div>
+                    <div class="col">
+                        <input type="submit" value="Facebook" class="btn3"> 
+                    </div>
                 </div>
             </form>
         </div>

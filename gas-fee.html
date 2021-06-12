@@ -9,6 +9,7 @@
     <style>
         body {
           font-family: Arial;
+          background-color: #101119;
         }
         
         * {
@@ -16,29 +17,29 @@
         }
         
         form.searchbar input[type=text] {
-          padding: 10px;
+          padding: 5px;
           font-size: 17px;
           border: 1px solid grey;
           float: left;
           width: 70%;
-          background: #f1f1f1;
+          background: #6a6a75;
           margin-left: 160px;
+          border: none;
         }
         
         form.searchbar button {
           float: left;
-          width: 10%;
-          padding: 10px;
-          background: #2196F3;
+          border: none;
+          width: 5%;
+          padding: 5px;
+          background: #6a6a75;
           color: white;
           font-size: 17px;
-          border: 1px solid grey;
-          border-left: none;
           cursor: pointer;
         }
         
         form.searchbar button:hover {
-          background: #0b7dda;
+          background: #0f142b;
         }
         
         form.searchbar::after {
@@ -55,14 +56,14 @@
           margin: 0;
           padding: 0;
           width: 150px;
-          background-color: #f1f1f1;
+          background-color: #0f142b;
           position: fixed;
           height: 100%;
           overflow: auto;
         }
         .sidebar a {
   display: block;
-  color: black;
+  color: white;
   padding: 16px;
   text-decoration: none;
 }
@@ -104,6 +105,22 @@ div.content {
       margin-left: 175px !important;
       margin-right: 175px !important;
   }
+  .form-control{
+    background-color: #060d24;
+    color: white;
+    border: none;
+  }
+  .p-1{
+    color: #00f5b0;
+  }
+  .get{
+    opacity: 0.4;
+  }
+  .btn-1{
+    width: 20%;
+    background-color:#00f5b0 ;
+    border: none;
+  }
 </style>
     <title>Gas Fee</title>
 </head>
@@ -143,7 +160,7 @@ div.content {
                     <div class="col">
                         <h4>Over all Gas Fee</h4>
                     </div>
-                    <div class="col">
+                    <div class="col p-1">
                         <p><strong>0.002323</strong></p>
                         <!-- <p>value to be added here from backend</p> -->
                     </div>
@@ -152,7 +169,7 @@ div.content {
                     <div class="col">
                         <h4>Average Daily Gas Fee</h4>
                     </div>
-                    <div class="col">
+                    <div class="col p-1">
                         <p><strong>0.008786</strong></p>
                         <!-- <p>value to be added here from backend</p> -->
                     </div>
@@ -161,13 +178,15 @@ div.content {
                     <div class="col">
                         <h5>Add New Gas Fee</h5>
                         <br>
-                        <input type="text" name="product name" id="pname">
+                        <input class="get" type="text" name="product name" id="pname">
                         <br><br>
-                        <input type="date" name="adding-date" id="date" style="padding-left: 37px;">
+                        <input class="get" type="date" name="adding-date" id="date" style="padding-left: 37px;">
                         <br><br>
-                        <input type="number" name="gas fee" id="fee">
+                        <input class="get" type="number" name="gas fee" id="fee">
                         <br><br>
-                        <input type="submit" value="Add">
+                        <form  action="add gass fee">
+                          <input class="btn-1" type="submit" value="Add">
+                        </form>
                     </div>
                     <div class="col">
                         <img src="gas fee graph.PNG" alt="">
